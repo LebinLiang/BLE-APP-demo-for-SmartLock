@@ -1,0 +1,62 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="activitytest.example.com.smartlock.Fragment.TwoFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <Button
+            android:id="@+id/set_password_btn"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="182dp"
+            android:text="设置访客密码" />
+
+        <Button
+            android:id="@+id/set_space_btn"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/set_password_btn"
+            android:layout_below="@+id/set_password_btn"
+            android:layout_marginTop="11dp"
+            android:text="设置开锁位置/确定" />
+
+        <Button
+            android:id="@+id/record_btn"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/set_space_btn"
+            android:layout_below="@+id/set_space_btn"
+            android:layout_marginTop="19dp"
+            android:text="查看开锁记录" />
+
+        <Button
+            android:id="@+id/unlock_warning_btn"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/record_btn"
+            android:layout_marginTop="22dp"
+            android:text="串口调试"
+            android:visibility="visible" />
+
+        <CheckBox
+            android:id="@+id/auto_lock"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:layout_above="@+id/set_space_btn"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="66dp"
+            android:fontFamily="sans-serif"
+            android:text="关门自动上锁"
+            android:textAppearance="@style/TextAppearance.AppCompat" />
+
+    </RelativeLayout>
+</FrameLayout>

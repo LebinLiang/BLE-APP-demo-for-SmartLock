@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center_vertical"
+    android:orientation="vertical"
+    android:background="#1b919191"
+    tools:context="activitytest.example.com.smartlock.Login.Login_Visitor_Activity">
+
+
+    <EditText
+        android:id="@+id/editText_visitor"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="185dp"
+        android:background="#00919191"
+        android:ems="4"
+        android:gravity="center_horizontal"
+        android:hint="····"
+        android:inputType="numberPassword"
+        android:maxLength="4"
+        android:singleLine='true'
+        android:textAlignment="center"
+        android:textSize="50dp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/editText_visitor"
+        android:layout_marginTop="37dp"
+        android:background="#01579b"
+        android:text=" ·请输入访客密码"
+        android:textAlignment="viewStart"
+        android:textAllCaps="true"
+        android:textColor="?android:attr/colorPressedHighlight"
+        android:textSize="30sp" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/textView1"
+        android:background="#01579b"
+        android:text=" 注：点击上方密码框输入密码"
+        android:textAlignment="textStart"
+        android:textAllCaps="true"
+        android:textColor="@android:color/darker_gray"
+        android:textSize="12sp" />
+
+    <CheckBox
+        android:id="@+id/checkBox_visitor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/textView2"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:text="记住密码" />
+
+    <LinearLayout
+        android:id="@+id/linearlayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+       android:layout_alignParentBottom="true"
+        android:background="#00ffffff"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/back_btn_visitor"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:layout_below="@+id/textView2"
+            android:layout_weight="1"
+            android:background="#00919191"
+            android:text="返回"
+            android:textSize="18sp" />
+
+        <Button
+            android:id="@+id/true_btn_visitor"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="#00919191"
+            android:text="确定"
+
+            android:textSize="18sp" />
+
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="128dp"
+        android:layout_height="128dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="36dp"
+        app:srcCompat="@drawable/p02" />
+
+</RelativeLayout>
